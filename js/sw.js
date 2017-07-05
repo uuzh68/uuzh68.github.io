@@ -4,6 +4,7 @@ var urlsToCache = [
     '/css/bootstrap.min.css',
     '/css/site.css',
     '/js/start.js',
+    'https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,700',
     '/js/sw.js'
 ];
 
@@ -60,7 +61,7 @@ self.addEventListener('fetch', function(event) {
 
 self.addEventListener('activate', function(event) {
 
-    var cacheWhitelist = ['pages-cache-v1', 'blog-posts-cache-v1'];
+    var cacheWhitelist = [CACHE_NAME, 'pages-cache-v1', 'blog-posts-cache-v1'];
 
     event.waitUntil(
         caches.keys().then(function(cacheNames) {
