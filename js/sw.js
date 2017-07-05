@@ -1,10 +1,10 @@
 var CACHE_NAME = 'my-site-cache-v1';
 var urlsToCache = [
     '/',
-    './css/bootstrap.min.css',
-    './css/site.css',
-    './js/start.js',
-    './js/sw.js'
+    '/css/bootstrap.min.css',
+    '/css/site.css',
+    '/js/start.js',
+    '/js/sw.js'
 ];
 
 self.addEventListener('install', function(event) {
